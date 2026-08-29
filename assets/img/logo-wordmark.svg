@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56" role="img" aria-label="Greg's Brush Strokes — Painting &amp; Decorating">
+  <rect width="320" height="56" fill="#0c0d14"/>
+  <text x="160" y="30" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="22" font-weight="500" fill="#e8e3d8" letter-spacing="0.4">Greg's Brush Strokes</text>
+  <line x1="148" y1="40" x2="172" y2="40" stroke="#8e939b" stroke-width="1"/>
+  <text x="160" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#8e939b" letter-spacing="2.2">PAINTING &amp; DECORATING</text>
+</svg>
