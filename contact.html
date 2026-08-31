@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; Booking — Greg's Brush Strokes | Cheadle Painting &amp; Decorating</title>
+<meta name="description" content="Book Greg's Brush Strokes — painter and decorator in Cheadle, Greater Manchester. Call 07704 249020 or request a quote online. Based at 3 Tatton Close, Cheadle, SK8 2LZ.">
+<meta name="theme-color" content="#0c0d14">
+<link rel="canonical" href="https://gregsbrushstrokes.co.uk/contact.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="bg-stone" aria-hidden="true">
+  <div class="bg-stone__layer bg-stone__layer--a" id="stoneA"></div>
+  <div class="bg-stone__layer bg-stone__layer--b" id="stoneB"></div>
+</div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <nav class="nav nav--left" id="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+    <a class="brand brand--centre" href="index.html" aria-label="Greg's Brush Strokes — home">
+      <img class="brand__logo brand__logo--mono" src="assets/img/logo-g-header.png" alt="Greg's Brush Strokes" width="60" height="60">
+    </a>
+    <div class="header-cta">
+      <a class="btn btn--solid" href="tel:+447704249020"><span class="btn-ico" aria-hidden="true">☎</span> <span class="tel">07704 249020</span></a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section bg-midnight" style="padding-bottom:clamp(2rem,4vw,2.5rem)">
+  <div class="container" style="max-width:780px">
+    <span class="eyebrow">Contact &amp; booking</span>
+    <h1 style="margin-block:1rem 1.3rem">Tell Greg about your space.</h1>
+    <p class="lead">The quickest way to reach Greg is by phone. Or share a few details below and he'll come back to you to arrange a no-obligation quote — with an honest view on what the work involves.</p>
+    <div class="pr-rule" style="margin-top:1.8rem" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="section bg-anthracite" style="padding-top:1rem">
+  <div class="container">
+    <div class="grid contact-grid">
+
+      <!-- Booking form -->
+      <div class="reveal">
+        <h2 style="margin-bottom:.4rem">Request a quote</h2>
+        <p class="muted" style="margin-bottom:1.6rem">Share what you need and how you'd like to be contacted. Greg will be in touch.</p>
+
+        <form id="bookingForm" class="form-card" novalidate>
+          <!-- FormSubmit config (AJAX, no redirect, no captcha for cleaner UX) -->
+          <input type="hidden" name="_subject" value="New booking request — Greg's Brush Strokes website">
+          <input type="hidden" name="_template" value="table">
+          <!-- honeypot anti-spam -->
+          <input type="text" name="_honey" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Your name <span class="req">*</span></label>
+              <input type="text" id="f-name" name="name" placeholder="Jane Smith" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="f-contact">Phone or email <span class="req">*</span></label>
+              <input type="text" id="f-contact" name="contact" placeholder="07700 900000 or you@email.com" required autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-top:1.3rem">
+            <div class="field">
+              <label for="f-service">Service needed <span class="req">*</span></label>
+              <select id="f-service" name="service" required>
+                <option value="" selected disabled>Select a service…</option>
+                <option>Interior painting</option>
+                <option>Exterior painting</option>
+                <option>Spray finishing</option>
+                <option>Wallpapering</option>
+                <option>Full-house / pre-sale redecoration</option>
+                <option>Small DIY &amp; repairs</option>
+                <option>Not sure — please advise</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-timing">Preferred timing</label>
+              <select id="f-timing" name="timing">
+                <option value="" selected disabled>Select if known…</option>
+                <option>As soon as possible</option>
+                <option>Within the next month</option>
+                <option>In 1–3 months</option>
+                <option>Just exploring for now</option>
+                <option>Flexible / no rush</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-top:1.3rem">
+            <div class="field">
+              <label for="f-area">Your area</label>
+              <input type="text" id="f-area" name="area" placeholder="e.g. Bramhall, Altrincham, Wilmslow…" autocomplete="address-level2">
+            </div>
+            <div class="field">
+              <label for="f-method">Best way to contact you</label>
+              <select id="f-method" name="preferred_contact">
+                <option value="" selected disabled>Select…</option>
+                <option>Phone call</option>
+                <option>Text message</option>
+                <option>Email</option>
+                <option>No preference</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row" style="margin-top:1.3rem">
+            <div class="field">
+              <label for="f-message">Anything else?</label>
+              <textarea id="f-message" name="message" placeholder="Tell Greg a little about the rooms, surfaces, or anything that will help with the quote."></textarea>
+            </div>
+          </div>
+
+          <div class="form-foot">
+            <button type="submit" class="btn btn--solid btn-lg" id="bookingSubmit">Send request</button>
+            <span class="muted-faint">No obligation. Greg replies personally.</span>
+          </div>
+
+          <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Contact details + map -->
+      <div class="reveal">
+        <h2 style="margin-bottom:.4rem">Reach Greg directly</h2>
+        <ul class="info-list">
+          <li>
+            <span class="ico" aria-hidden="true">☎</span>
+            <span><b>Phone</b><a href="tel:+447704249020">07704 249020</a></span>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">⌖</span>
+            <span><b>Based in</b><span>3 Tatton Close, Cheadle, Stockport SK8 2LZ</span></span>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">◷</span>
+            <span><b>Hours</b><span>By appointment — call to arrange a time that suits</span></span>
+          </li>
+        </ul>
+
+        <div style="margin-top:1.8rem">
+          <iframe class="map-frame"
+            title="Map showing Greg's Brush Strokes location in Cheadle, SK8 2LZ"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-2.204%2C53.383%2C-2.184%2C53.392&amp;layer=mapnik&amp;marker=53.38759%2C-2.19423"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div style="margin-top:1.8rem">
+          <span class="eyebrow">Areas served</span>
+          <ul class="locations" aria-label="Areas served" style="margin-top:1rem">
+            <li>Stockport</li><li>Hazel Grove</li><li>Bramhall</li><li>Cheadle</li>
+            <li>Wythenshawe</li><li>Timperley</li><li>Altrincham</li><li>Bowdon</li>
+            <li>Handforth</li><li>Wilmslow</li><li>Alderley Edge</li><li>Knutsford</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="brand">
+          <img class="brand__logo brand__logo--mono" src="assets/img/logo-g-header.png" alt="Greg's Brush Strokes" width="56" height="56">
+        </div>
+        <p class="muted" style="max-width:38ch;font-size:.95rem;margin-top:1rem">Meticulous painting and decorating for discerning homeowners across Cheadle and Greater Manchester.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li><a href="tel:+447704249020">07704 249020</a></li><li>3 Tatton Close, Cheadle, SK8 2LZ</li><li>Greater Manchester, England</li></ul>
+      </div>
+    </div>
+    <div class="site-footer__base">
+      <span>© <span id="year">2026</span> Greg's Brush Strokes Limited · Company no. 16750825 · Registered in England &amp; Wales</span>
+      <span>Painting &amp; Decorating · Cheadle, Greater Manchester</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
